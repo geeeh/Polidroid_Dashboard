@@ -15,7 +15,7 @@ before_install:
   - createdb test
 
 script:
-  - phpunit
+  - vendor/bin/phpunit
 
 services:
   - pgsql
