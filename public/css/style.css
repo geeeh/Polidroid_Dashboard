@@ -1,0 +1,64 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+}
+
+.sign {
+  padding: 20px;
+  margin-top: 10%;
+}
+
+.sign input {
+border: 0;
+border-radius: 0;
+border-bottom: solid 1px #DDD;
+font-size: 14px;
+}
+
+.sign .colored {
+  background: #000000 url("/imgs/back.jpg");
+  background-position: center;
+  width: 70%;
+  height: 500px;
+}
+
+.sign .card {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 1px 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.sign .card-body {
+  padding: 0;
+}
+
+.sign form {
+  margin: 60px auto;
+}
+
+.sign .col-md-8 {
+  margin: 0 auto; 
+}
+
+.sign h4 {
+  text-align: center;
+  margin-top: 60px;
+  color: #13748a;
+}
+
+.login-btn {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.login-btn button {
+  border: 0;
+  border-radius: 2px;
+  padding: 7px 25px;
+  box-shadow: 1px 1px 1px rgba(68, 68, 68, 0.6);
+  background: #2193b0;
+}
