@@ -1,12 +1,15 @@
 body {
   font-family: 'Lato', sans-serif;
   background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: rgb(68, 68, 68) !important;
 }
 
 .navbar-brand {
-  color: #FFFFFF !important;
+  color: rgb(68, 68, 68) !important;
+  font-family: 'Dancing Script', cursive;
 }
 
+/* sign up pages */
 .sign {
   padding: 20px;
   margin-top: 10%;
@@ -22,8 +25,7 @@ font-size: 14px;
 .sign .colored {
   background: #000000 url("/imgs/back.jpg");
   background-position: center;
-  width: 70%;
-  height: 500px;
+  min-height: 500px;
 }
 
 .sign .card {
@@ -61,4 +63,46 @@ font-size: 14px;
   padding: 7px 25px;
   box-shadow: 1px 1px 1px rgba(68, 68, 68, 0.6);
   background: #2193b0;
+}
+
+/* sidebar */
+.sidebar .icon {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  border: solid 0px #000000;
+  box-shadow: 1px 1px 1px rgba(68, 68, 68, 0.6);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sidebar .list-icon {
+  width: 25px;
+  height: auto;
+  margin: 10px;
+}
+
+.sidebar .dashboard-links {
+  margin: 100px 0;
+}
+
+.sidebar .dashboard-links {
+  list-style-type: none;
+}
+
+.sidebar .dashboard-links li {
+  padding: 5px 0;
+}
+
+.sidebar .dashboard-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.stats .view {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 1px rgba(68, 68, 68, 0.6);
+  height: 400px;
+  margin: 10px;
+  border-radius: 3px;
 }

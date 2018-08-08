@@ -48,6 +48,12 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <div class="col-md-8">
+                                <input id="password-confirm" type="password" class="form-control" placeholder="CONFIRM PASSWORD" name="password_confirmation" required>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                         <div class="col-md-8 login-btn">
                                 <button type="submit" class="btn btn-primary">
@@ -55,13 +61,6 @@
                                 </button>
 </div>
                         </div>
-                        <!-- <div class="form-group">
-                        <div class="col-md-8">
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-</div>
-                        </div> -->
                     </form>
                     </div>
                 </div>
