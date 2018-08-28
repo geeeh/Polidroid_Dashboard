@@ -17,8 +17,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/requests', 'ResponseController@index')->name('requests');
+Route::get('/account', 'AccountController@index')->name('account');
+Route::post('/account', 'AccountController@create')->name('createaccount');
+Route::get('/account/new', 'AccountController@index')->name('new_account');
+Route::post('/account/:id', 'AccountController@update')->name('editaccount');
+Route::post('/requests', 'ResponseController@get');

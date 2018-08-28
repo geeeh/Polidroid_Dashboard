@@ -13,7 +13,19 @@ class CreateAccountTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('account', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('company_name');
+            $table->string('phone');
+            $table->float('latitude');
+            $table->float('longitude');
+            $table->enum('service_type', ['police', 'towing', 'fire', 'hospital']);
+            $table->boolean('active')->default(true);
+            $table->integer('user_id');
+            $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+        });
     }
 
     /**
@@ -23,6 +35,6 @@ class CreateAccountTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('account');
     }
 }

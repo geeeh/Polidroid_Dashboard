@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    protected $rules = [
+        'email' => 'bail|required|unique:posts|max:255',
+        'password' => 'required|regex:/\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i',
+        'name' => 'required|min:2|max:10'
+    ];
+
 }

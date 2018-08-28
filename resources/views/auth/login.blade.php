@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container sign">
+    @include('partials.navbar')
+    <div class="container sign">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">

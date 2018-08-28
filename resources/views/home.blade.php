@@ -1,13 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.main')
+<div class="dash-nav">
+    @include('partials.dashnav')
 @section('content')
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-md-3">
+<div class="home">
+    <div class="row">
+        <div>
             @include('partials.sidebar')
         </div>
-        <div class="col-md-7">
+        <div class="content">
             @yield('pages')
         </div>
     </div>
+</div>
 </div>
 @endsection

@@ -10,4 +10,18 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function __construct()
+    {
+    }
+
+    /**
+     * Return the path to public dir.
+     * @param null $path - destination
+     * @return string - full path
+     */
+    function publicPath($path=null)
+    {
+        return rtrim(app()->basePath('public/'.$path), '/');
+    }
 }
